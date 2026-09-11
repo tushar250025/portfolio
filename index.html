@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tushar — Video Editor and Motion Designer. Editing, motion graphics, and visual storytelling."
+    />
+    <title>Tushar — Video Editor &amp; Motion Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============================================
+         NAVIGATION
+         Replace the logo text if you want a different name.
+         ============================================ -->
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#top">TUSHAR</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============================================
+           HERO
+           ============================================ -->
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-grain"></div>
+          <div class="hero-glow"></div>
+          <div class="viewfinder">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="hero-inner">
+          <h1>
+            VIDEO EDITOR
+            <span>&amp; MOTION DESIGNER</span>
+          </h1>
+          <p class="hero-copy">
+            I turn ideas into engaging visual stories through editing, motion and
+            design.
+          </p>
+          <a class="btn btn-primary" href="#work">VIEW MY WORK</a>
+        </div>
+      </section>
+
+      <!-- ============================================
+           SHOWREEL
+           Replace videos/showreel.mp4 with your showreel file.
+           Replace images/poster.svg if you want a custom thumbnail.
+           ============================================ -->
+      <section class="section showreel-section" id="showreel" aria-labelledby="showreel-title">
+        <div class="section-head">
+          <h2 id="showreel-title">SHOWREEL</h2>
+          <p class="section-note">Selected work • Editing • Motion Design</p>
+        </div>
+
+        <figure class="player player-large reveal">
+          <!-- Change only the src path when your showreel file is ready -->
+          <video
+            id="showreel-video"
+            controls
+            playsinline
+            preload="metadata"
+            poster="images/poster.svg"
+            src="videos/showreel.mp4"
+          ></video>
+          <div class="media-placeholder">
+            Add your showreel at <code>videos/showreel.mp4</code>
+          </div>
+        </figure>
+      </section>
+
+      <!-- ============================================
+           SELECTED WORK
+           Each card has a video path you can replace:
+           videos/project-01.mp4 … videos/project-06.mp4
+           Update title, category, and description in each <article>.
+           ============================================ -->
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="work-title">SELECTED WORK</h2>
+        </div>
+
+        <div class="project-grid">
+          <article
+            class="project-card reveal"
+            data-video="videos/project-01.mp4"
+            data-title="Motion Sequence"
+            data-category="Motion Graphics"
+          >
+            <div class="project-media">
+              <video muted playsinline loop preload="none" loading="lazy" poster="images/poster.svg" src="videos/project-01.mp4"></video>
+              <span class="media-placeholder">videos/project-01.mp4</span>
+              <button class="project-hit" type="button" aria-label="Open Motion Sequence">Open</button>
+            </div>
+            <div class="project-meta">
+              <p class="project-category">Motion Graphics</p>
+              <h3>Motion Sequence</h3>
+              <p>Kinetic type and graphic overlays shaped around a clear visual rhythm.</p>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-video="videos/project-02.mp4"
+            data-title="Vertical Cut"
+            data-category="Short-form Editing"
+          >
+            <div class="project-media">
+              <video muted playsinline loop preload="none" loading="lazy" poster="images/poster.svg" src="videos/project-02.mp4"></video>
+              <span class="media-placeholder">videos/project-02.mp4</span>
+              <button class="project-hit" type="button" aria-label="Open Vertical Cut">Open</button>
+            </div>
+            <div class="project-meta">
+              <p class="project-category">Short-form Editing</p>
+              <h3>Vertical Cut</h3>
+              <p>A tight, platform-ready edit built for pace, hooks, and retention.</p>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-video="videos/project-03.mp4"
+            data-title="Campaign Spot"
+            data-category="Advertisement"
+          >
+            <div class="project-media">
+              <video muted playsinline loop preload="none" loading="lazy" poster="images/poster.svg" src="videos/project-03.mp4"></video>
+              <span class="media-placeholder">videos/project-03.mp4</span>
+              <button class="project-hit" type="button" aria-label="Open Campaign Spot">Open</button>
+            </div>
+            <div class="project-meta">
+              <p class="project-category">Advertisement</p>
+              <h3>Campaign Spot</h3>
+              <p>Commercial pacing with motion accents that keep the message in focus.</p>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-video="videos/project-04.mp4"
+            data-title="Social Series"
+            data-category="Social Media"
+          >
+            <div class="project-media">
+              <video muted playsinline loop preload="none" loading="lazy" poster="images/poster.svg" src="videos/project-04.mp4"></video>
+              <span class="media-placeholder">videos/project-04.mp4</span>
+              <button class="project-hit" type="button" aria-label="Open Social Series">Open</button>
+            </div>
+            <div class="project-meta">
+              <p class="project-category">Social Media</p>
+              <h3>Social Series</h3>
+              <p>A repeatable visual system for short posts across a content series.</p>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-video="videos/project-05.mp4"
+            data-title="Tone Piece"
+            data-category="Cinematic Edit"
+          >
+            <div class="project-media">
+              <video muted playsinline loop preload="none" loading="lazy" poster="images/poster.svg" src="videos/project-05.mp4"></video>
+              <span class="media-placeholder">videos/project-05.mp4</span>
+              <button class="project-hit" type="button" aria-label="Open Tone Piece">Open</button>
+            </div>
+            <div class="project-meta">
+              <p class="project-category">Cinematic Edit</p>
+              <h3>Tone Piece</h3>
+              <p>An atmospheric cut focused on mood, timing, and visual continuity.</p>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-video="videos/project-06.mp4"
+            data-title="Brand Film"
+            data-category="Brand Content"
+          >
+            <div class="project-media">
+              <video muted playsinline loop preload="none" loading="lazy" poster="images/poster.svg" src="videos/project-06.mp4"></video>
+              <span class="media-placeholder">videos/project-06.mp4</span>
+              <button class="project-hit" type="button" aria-label="Open Brand Film">Open</button>
+            </div>
+            <div class="project-meta">
+              <p class="project-category">Brand Content</p>
+              <h3>Brand Film</h3>
+              <p>Clean brand-focused storytelling with designed motion throughout.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================
+           ABOUT
+           Replace the paragraph and swap the image src
+           with your photo (for example: images/profile.jpg).
+           ============================================ -->
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-grid reveal">
+          <div class="portrait">
+            <!-- Add your photo here, for example:
+                 <img src="images/profile.jpg" alt="Tushar" width="720" height="900" />
+            -->
+            <span class="portrait-label">Add images/profile.jpg</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">Profile</p>
+            <h2 id="about-title">ABOUT ME</h2>
+            <p>
+              I'm a video editor and motion designer focused on creating engaging,
+              clean and visually strong content. I work across short-form videos,
+              motion graphics, advertisements and social media content.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           SKILLS & TOOLS
+           ============================================ -->
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-head">
+          <p class="eyebrow">Craft</p>
+          <h2 id="skills-title">SKILLS &amp; TOOLS</h2>
+        </div>
+
+        <ul class="skill-list">
+          <li class="reveal"><span>01</span> Video Editing</li>
+          <li class="reveal"><span>02</span> Motion Design</li>
+          <li class="reveal"><span>03</span> Short-form Content</li>
+          <li class="reveal"><span>04</span> Visual Storytelling</li>
+          <li class="reveal"><span>05</span> Color Grading</li>
+          <li class="reveal"><span>06</span> Sound Design</li>
+        </ul>
+
+        <ul class="tool-list">
+          <li>Adobe Premiere Pro</li>
+          <li>Adobe After Effects</li>
+          <li>Photoshop</li>
+          <li>Alight Motion</li>
+        </ul>
+      </section>
+
+      <!-- ============================================
+           CONTACT
+           Replace the href values below with your real links.
+           Email:    mailto:you@email.com
+           Instagram: https://instagram.com/yourusername
+           WhatsApp:  https://wa.me/91XXXXXXXXXX
+           LinkedIn:  https://linkedin.com/in/yourprofile
+           ============================================ -->
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">LET'S WORK TOGETHER</h2>
+        <p class="contact-lead">
+          Have a project in mind? Let's create something worth watching.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>TUSHAR © 2026</p>
+      <p>Video Editor &amp; Motion Designer</p>
+      <a class="back-top" href="#top">Back to top</a>
+    </footer>
+
+    <!-- Project lightbox -->
+    <div class="modal" id="project-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div
+        class="modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button class="modal-close" type="button" aria-label="Close video" data-close-modal>
+          Close
+        </button>
+        <p class="modal-category" id="modal-category"></p>
+        <h3 id="modal-title"></h3>
+        <div class="player modal-player">
+          <video id="modal-video" controls playsinline preload="metadata" poster="images/poster.svg"></video>
+          <div class="media-placeholder" id="modal-placeholder"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
